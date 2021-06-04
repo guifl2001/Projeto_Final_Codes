@@ -1,0 +1,10 @@
+header{
+    display: flex;
+    flex-direction: row;
+
+    border-bottom: 0.1rem solid black;
+}
+
+.menu{
+    height: 100%;
+}
