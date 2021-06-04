@@ -1,10 +1,63 @@
 header{
     display: flex;
     flex-direction: row;
-
+    justify-content: center;
+    align-items: center;
     border-bottom: 0.1rem solid black;
+    height: 3rem;
 }
 
 .menu{
     height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 3rem;
+}
+
+main {
+    margin-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.autocomplete{
+    width: 2rem;
+    position: relative;
+    display: inline-block;
+}
+.autocomplete-items {
+    position: absolute;
+    border: 0.1rem solid #d4d4d4;
+    top: 100%;
+    left: 0;
+    right: 0;
+}
+
+#myInput {
+    border-radius: 2rem;
+}
+
+.promo-produtos {
+    overflow-x: scroll;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+
+.promo{
+    margin-top: 10rem;
+
+}
+
+.prod1{
+    width: 2rem;
+    height: 2rem;
+}
+
+ul.promo-produtos > *{
+    border: 0.1rem solid black;
+
 }
