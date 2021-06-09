@@ -41,15 +41,13 @@ main {
 }
 
 .promo-produtos {
-    overflow-x: scroll;
+    overflow-x: hidden;
     display: flex;
     flex-direction: row;
-    overflow: hidden;
 }
 
 .promo{
     margin-top: 10rem;
-
 }
 
 .prod1{
@@ -57,7 +55,27 @@ main {
     height: 2rem;
 }
 
-ul.promo-produtos > *{
-    border: 0.1rem solid black;
 
+.promo-produtos li{
+    margin-top: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    border: 0.1rem solid black;
+}
+
+
+.highlight { 
+    display: block; 
+}
+
+.displaynone {
+    display: none;
+}
+
+.seta {
+    position: relative;
+    left: 20.5rem;
+    top: 10rem;
+    width: 2rem;
+    height: 2rem;
 }
