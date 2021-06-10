@@ -8,15 +8,75 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-</head>
+    <script src="js/inicio.js"></script>
 <body>
-    <header>
-        <img class='menu' scr='\imagens\menuhamburger.png' alt='Menu_hamburguer'>
+    <header class='cabecalho'>
+        <img class='botao-menu' src='imagens/menuhamburger.png' alt='Menu_hamburguer'>
         <h1>Nome</h1>
     </header>
-    <form action="?">
-        <input type="text" placeholder="Pesquisar" name="pesquisa">
-        <button type="submit"><i class="fa fa-search"></i></button>
-    </form>
+    <main class='pagina'>
+        <h2>Pesquise seu produto ou loja </h2>
+        <form class='pesquisa'>
+            <input class="barra-pesquisa" type="text" placeholder="Pesquisar">
+            <button class='botao'><img src='imagens/Lupa_pesquisa.png' class='lupa'></button>
+        </form>
+        <div class='Promo'>
+            <h2 class='titulo'>Promoções</h2>
+            <div class='elementos-promo'>
+                <img class='seta esquerda displaynone' src='imagens/seta.png'>
+                <ul class='promo-produtos'>
+                    <li class='displaynone'>
+                        <h3> Produto X</h3>
+                        <img class='prod' src='imagens/rtx3090.jpg' alt='rtx3090'>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ut vehicula nisl, ut vehicula erat.
+                            Fusce molestie justo et porta sollicitudin. Nam posuere ultrices nibh quis feugiat.
+                        </p>
+                    </li>
+                    <li class='displaynone'>
+                        <h3> Produto Y</h3>
+                        <img class='prod' src='imagens/blackwidow.jpg' alt='teclado gamer'>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ut vehicula nisl, ut vehicula erat.
+                            Fusce molestie justo et porta sollicitudin. Nam posuere ultrices nibh quis feugiat.
+                        </p>
+                    </li>
+                    <li class='displaynone'>
+                        <h3> Produto Z</h3>
+                        <img class='prod' src='imagens/rtx3090.jpg' alt='rtx3090'>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ut vehicula nisl, ut vehicula erat.
+                            Fusce molestie justo et porta sollicitudin. Nam posuere ultrices nibh quis feugiat.
+                        </p>
+                    </li>
+                    <li class='displaynone'>
+                        <h3> Produto W</h3>
+                        <img class='prod' src='imagens/rtx3090.jpg' alt='rtx3090'>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ut vehicula nisl, ut vehicula erat.
+                            Fusce molestie justo et porta sollicitudin. Nam posuere ultrices nibh quis feugiat.
+                        </p>
+                    </li>
+                    <li class='displaynone'>
+                        <h3> Produto V</h3>
+                        <img class='prod' src='imagens/rtx3090.jpg' alt='rtx3090'>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ut vehicula nisl, ut vehicula erat.
+                            Fusce molestie justo et porta sollicitudin. Nam posuere ultrices nibh quis feugiat.
+                        </p>
+                    </li>
+                    <li class='displaynone'>
+                        <h3> Produto K</h3>
+                        <img class='prod' src='imagens/rtx3090.jpg' alt='rtx3090'>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ut vehicula nisl, ut vehicula erat.
+                            Fusce molestie justo et porta sollicitudin. Nam posuere ultrices nibh quis feugiat.
+                        </p>
+                    </li>
+                </ul>
+                <img class='seta direita' src='imagens/seta.png'>
+            </div>
+        </div>
+        <div class='descricao'>
+            <h2 class='titulo'>Descrição</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ut vehicula nisl, ut vehicula erat.
+                Fusce molestie justo et porta sollicitudin. Nam posuere ultrices nibh quis feugiat.
+            </p>
+        </div>
+    </main>
 </body>   
 </html>
