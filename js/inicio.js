@@ -1,5 +1,3 @@
-var pesquisas = ['lojas', 'produto']
-
 document.addEventListener("DOMContentLoaded", function(event){
     // seleciona os elementos a serem usados
     const list = document.querySelector(".promo-produtos");
@@ -25,6 +23,11 @@ document.addEventListener("DOMContentLoaded", function(event){
             listitems[currentLI-1].classList.remove("displaynone");
             listitems[currentLI-1].classList.add("highlight");
         }
+        if (currentLI == listitems.length){
+            seta_direita.classList.add("displaynone");
+        }else{
+            seta_direita.classList.remove("displaynone");
+        }
         if (currentLI > 2){
             seta_esquerda.classList.remove("displaynone");
         }else {
@@ -49,10 +52,19 @@ document.addEventListener("DOMContentLoaded", function(event){
         }else {
             seta_esquerda.classList.add('displaynone');
         }
+        if (currentLI == listitems.length){
+            seta_direita.classList.add("displaynone");
+        }else{
+            seta_direita.classList.remove("displaynone");
+        }
     });
+     
     // Pesquisa para o fluxo de tela
-    function pesquisa (algo){
-        // diajd
-        
-    }
+    const submit = document.querySelector('.lupa');
+    submit.addEventListener('click', function(event){
+        const barra = document.querySelector('.barra-pesquisa');
+        if (barra.value == 'fone de ouvido gamer'){
+            window.open("produtos.html");
+        }
+    })
 });

@@ -1,4 +1,4 @@
-header{
+.cabecalho{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -14,7 +14,7 @@ header{
     height: 3rem;
 }
 
-main {
+.pagina {
     margin-top: 10rem;
     display: flex;
     flex-direction: column;
@@ -80,6 +80,7 @@ main {
 }
 
 .descricao {
+    width: 100%;
     margin-top: 5rem;
     border-top: solid black 0.1rem;
 }
@@ -104,4 +105,9 @@ main {
     margin-top: 1rem;
     border: 0.1rem solid black;
     border-radius: 3rem;
+}
+
+.botao{
+    border: 0;
+    background-color: white;
 }
