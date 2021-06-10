@@ -6,10 +6,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="js/style.js">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
+    <h1 class="titulo">Exibindo resultados</h1>
+    <p class="filtragem">Filtrar</p>
+    <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn">Dropdown/button>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="self">Preço</a>
+          <a href="#">Notas</a>
+          <a href="#">Trending</a>
+        </div>
+    </div>
+    <script>
+        /* When the user clicks on the button,
+        toggle between hiding and showing the dropdown content */
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        // Close the dropdown menu if the user clicks outside of it
+        window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script>
+    <ul class="resultados">
+        <li>
+            <p><a href="produto.html">Produto X</a></p>
+            <ul>
+            <li>Loja: Loja do Zé</li>
+            <li>Preço: R$500</li>
+            <li>★★★★☆ | 12 Avaliações</li>
+            </ul>
+        </li>
+        <li>
+            <p><a href="produto.html">Produto Y</a></p>
+            <ul>
+            <li>Loja: Loja do Zé</li>
+            <li>Preço: R$500</li>
+            <li>★★★★☆ | 12 Avaliações</li>
+            </ul>
+        </li>        <li>
+            <p><a href="produto.html">Produto 1</a></p>
+            <ul>
+            <li>Loja: Loja do Zé</li>
+            <li>Preço: R$500</li>
+            <li>★★★★☆ | 12 Avaliações</li>
+            </ul>
+        </li>        <li>
+            <p><a href="produto.html">Produto 1</a></p>
+            <ul>
+            <li>Loja: Loja do Zé</li>
+            <li>Preço: R$500</li>
+            <li>★★★★☆ | 12 Avaliações</li>
+            </ul>
+        </li>
+    </ul>
 </body>   
 </html>
