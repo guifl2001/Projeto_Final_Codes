@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="js/style.js">
+    <script type="text/javascript" src="js/produtos.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
@@ -19,8 +19,21 @@
         </form>   
     </header>
     <div class="filtro">
-        <p>Filtro</p>
-        <button>RELEVANCIA</button>
+        <button id="myBtn">Open Modal</button>
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p>Some text in the Modal..</p>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">Ordenar:
+            <div id="myDropdown" class="dropdown-content">
+              <a href="self">Preço</a>
+              <a href="#">Notas</a>
+              <a href="#">Trending</a>
+            </div>
+        </div>
     </div>
     <div class="resultados">
         <div>
