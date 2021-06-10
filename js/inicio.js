@@ -60,11 +60,14 @@ document.addEventListener("DOMContentLoaded", function(event){
     });
      
     // Pesquisa para o fluxo de tela
-    const submit = document.querySelector('.lupa');
+    const submit = document.querySelector('.botao');
     submit.addEventListener('click', function(event){
         const barra = document.querySelector('.barra-pesquisa');
         if (barra.value == 'fone de ouvido gamer'){
             window.open("produtos.html");
+        }
+        if (barra.value == 'amazon'){
+            window.open("lojas.html");
         }
     })
 });
